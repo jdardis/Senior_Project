@@ -1,0 +1,16 @@
+<?xml version="1.0"?><!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.cc.goods.hibernate">
+	<class name="com.cc.goods.hibernate.ConsumerGood" table="PRODUCTS_TABLE">
+		<id name="name" type="string" column="NAME" length="100">
+		<generator class="assigned"/>
+		</id>
+		<property name="price" column="PRICE" type="double" length="5"></property>
+		<property name="brand" column="BRAND" type="string" length="20"></property>
+		<property name="store" column="STORE" type="string" length="20"></property>
+		<property name="rating" column="RATING" type="double" length="2"></property>
+		<property name="date" column="DATE" type="string" length="10"></property>
+	</class>
+</hibernate-mapping>
